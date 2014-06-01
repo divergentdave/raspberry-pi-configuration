@@ -1,0 +1,32 @@
+auto lo
+
+iface lo inet loopback
+iface eth0 inet static
+	address 192.168.0.5
+	netmask 255.255.255.0
+	gateway 192.168.0.1
+
+allow-hotplug wlan0
+
+# disabled wifi defaults
+# iface wlan0 inet manual
+# wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+# iface default inet dhcp
+
+iface wlan0 inet static
+	address 192.168.100.1
+	netmask 255.255.255.0
+
+# router/NAT
+up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+up iptables -A FORWARD -i eth0 -o wlan0 -m state --state RELATED,ESTABLISHED -j ACCEPT
+up iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
+
+# upsidedownternet
+up iptables -t nat -A PREROUTING -i wlan0 -p tcp --dport 80 -j REDIRECT --to-port 3128
+
+# remap privileged port for tor bridge
+iptables -A INPUT -i eth0 -p tcp --dport 443 -j ACCEPT
+iptables -A INPUT -i eth0 -p tcp --dport 9090 -j ACCEPT
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 9090
+
