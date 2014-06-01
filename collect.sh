@@ -8,3 +8,5 @@ cp /etc/squid/squid.conf .
 cp /etc/apache2/conf.d/myapache.local.conf .
 cp /etc/tor/torrc .
 cp /etc/crontab .
+cp /etc/ssh/sshd_config .
+cp /home/pi/.ssh/authorized_keys .
