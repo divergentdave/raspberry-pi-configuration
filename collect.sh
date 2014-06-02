@@ -19,3 +19,5 @@ cp /etc/apache2/sites-enabled/000-default .
 cp /etc/apache2/sites-enabled/001-default-ssl .
 cp /etc/apache2/mods-enabled/ssl.load .
 cp /etc/apache2/mods-enabled/ssl.conf .
+cat /opt/etherpad/local/etherpad/etherpad-lite/settings.json | grep -v "\"sessionKey\"" | grep -v "\"password\"" > etherpad_settings.json
+cp /etc/init.d/etherpad-lite .
