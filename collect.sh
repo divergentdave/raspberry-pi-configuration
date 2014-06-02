@@ -10,3 +10,8 @@ cp /etc/tor/torrc .
 cp /etc/crontab .
 cp /etc/ssh/sshd_config .
 cp /home/pi/.ssh/authorized_keys .
+cp /etc/apache2/ports.conf .
+cp /etc/apache2/sites-enabled/000-default .
+cp /etc/apache2/sites-enabled/001-default-ssl .
+cp /etc/apache2/mods-enabled/ssl.load .
+cp /etc/apache2/mods-enabled/ssl.conf .
