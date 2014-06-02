@@ -1,0 +1,3 @@
+deb http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi
+deb-src http://deb.torproject.org/torproject.org wheezy main
+deb http://pagekite.net/pk/deb pagekite main

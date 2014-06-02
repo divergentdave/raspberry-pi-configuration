@@ -25,8 +25,7 @@ up iptables -A FORWARD -i wlan0 -o eth0 -j ACCEPT
 # upsidedownternet
 up iptables -t nat -A PREROUTING -i wlan0 -p tcp --dport 80 -j REDIRECT --to-port 3128
 
-# remap privileged port for tor bridge
+# remap privileged port for pagekite (to apache or tor bridge)
 iptables -A INPUT -i eth0 -p tcp --dport 443 -j ACCEPT
-iptables -A INPUT -i eth0 -p tcp --dport 9090 -j ACCEPT
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 9090
-
+iptables -A INPUT -i eth0 -p tcp --dport 4444 -j ACCEPT
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 4444
