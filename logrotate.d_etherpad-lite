@@ -1,0 +1,13 @@
+/var/log/etherpad-lite/*.log
+{
+	rotate 4
+	weekly
+	missingok
+	notifempty
+	compress
+	delaycompress
+	sharedscripts
+	postrotate
+		restart etherpad-lite >/dev/null 2>&1 || true
+	endscript
+}
