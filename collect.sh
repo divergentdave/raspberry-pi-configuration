@@ -23,3 +23,4 @@ cat /opt/etherpad/local/etherpad/etherpad-lite/settings.json | grep -v "\"sessio
 cp /etc/init.d/etherpad-lite .
 cp /etc/logrotate.d/etherpad-lite ./logrotate.d_etherpad-lite
 cp /etc/dnsmasq.d/dns.conf .
+cp /etc/hosts .
