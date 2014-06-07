@@ -24,3 +24,4 @@ cp /etc/logrotate.d/etherpad-lite ./logrotate.d_etherpad-lite
 cp /etc/dnsmasq.d/dns.conf .
 cp /etc/hosts .
 cp /etc/dnsmasq.d/dhcp.conf .
+cp /etc/default/ifplugd .
