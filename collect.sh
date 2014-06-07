@@ -1,7 +1,6 @@
 #!/bin/sh
 cp /etc/hostapd/hostapd.conf .
 cp /etc/dhcp/dhcpd.conf .
-cp /etc/default/isc-dhcp-server .
 cp /etc/network/interfaces .
 cp /etc/sysctl.conf .
 cp /etc/squid/squid.conf .
@@ -24,3 +23,4 @@ cp /etc/init.d/etherpad-lite .
 cp /etc/logrotate.d/etherpad-lite ./logrotate.d_etherpad-lite
 cp /etc/dnsmasq.d/dns.conf .
 cp /etc/hosts .
+cp /etc/dnsmasq.d/dhcp.conf .
