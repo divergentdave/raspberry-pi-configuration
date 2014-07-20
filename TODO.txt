@@ -1,0 +1,3 @@
+WebRTCSend w/ OTR
+Put Etherpad behind Apache reverse proxy -- needs testing
+Backups?
