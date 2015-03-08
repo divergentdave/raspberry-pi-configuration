@@ -1,3 +1,5 @@
 WebRTCSend w/ OTR
 Put Etherpad behind Apache reverse proxy -- needs testing
 Backups?
+Move upside-down-ternet temporary image directory onto a ramdisk
+Figure out how to save a list of manually installed apt packages
