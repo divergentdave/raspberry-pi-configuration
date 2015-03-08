@@ -25,5 +25,3 @@ cp /etc/dnsmasq.d/dns.conf .
 cp /etc/hosts .
 cp /etc/dnsmasq.d/dhcp.conf .
 cp /etc/default/ifplugd .
-cat /var/www/tt-rss/config.php | grep -v "DB_PASS" > tt-rss-config.php
-cp /etc/init.d/ttrss .
