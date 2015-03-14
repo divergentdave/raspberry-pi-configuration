@@ -17,3 +17,16 @@ while (<>) {
 		$url = $1;
 		system("/usr/bin/wget", "-q", "-O", "/var/tmp/upsidedownternet/$pid-$count.gif", "$url");
 		system("/usr/bin/mogrify", "-flip", "/var/tmp/upsidedownternet/$pid-$count.gif");
+		print "http://127.0.0.1/images/$pid-$count.gif\n";
+	}
+	elsif ($_ =~ /(.*\.png)/i) {
+		$url = $1;
+		system("/usr/bin/wget", "-q", "-O", "/var/tmp/upsidedownternet/$pid-$count.png", "$url");
+		system("/usr/bin/mogrify", "-flip", "/var/tmp/upsidedownternet/$pid-$count.png");
+		print "http://127.0.0.1/images/$pid-$count.png\n";
+	}
+	else {
+		print "$_\n";
+	}
+	$count++;
+}
