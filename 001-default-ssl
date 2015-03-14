@@ -13,7 +13,7 @@
 		Order allow,deny
 		allow from all
 	</Directory>
-	<Directory /var/www/images>
+	<Directory /var/tmp/upsidedownternet>
 		Order allow,deny
 		deny from all
 	</Directory>

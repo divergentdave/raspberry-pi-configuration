@@ -2,6 +2,7 @@
 	ServerAdmin webmaster@localhost
 
 	DocumentRoot /var/www
+	Alias /images /var/tmp/upsidedownternet
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
