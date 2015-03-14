@@ -1,6 +1,5 @@
 #!/bin/sh
 cp /etc/hostapd/hostapd.conf .
-cp /etc/dhcp/dhcpd.conf .
 cp /etc/network/interfaces .
 cp /etc/sysctl.conf .
 cp /etc/squid/squid.conf .
