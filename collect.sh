@@ -24,3 +24,4 @@ cp /etc/dnsmasq.d/dns.conf .
 cp /etc/hosts .
 cp /etc/dnsmasq.d/dhcp.conf .
 cp /etc/default/ifplugd .
+cp /etc/default/hostapd .
