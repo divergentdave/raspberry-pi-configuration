@@ -25,3 +25,4 @@ cp /etc/hosts .
 cp /etc/dnsmasq.d/dhcp.conf .
 cp /etc/default/ifplugd .
 cp /etc/default/hostapd .
+cp /usr/local/bin/flip.pl .
