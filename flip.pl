@@ -3,7 +3,8 @@
 # Adapted from http://www.ex-parrot.com/~pete/upside-down-ternet.html
 
 $directory = "/var/tmp/upsidedownternet";
-mkdir($directory) unless(-d $directory);
+umask 0022;
+mkdir($directory, 0775) unless(-d $directory);
 
 $|=1;
 $count = 0;
