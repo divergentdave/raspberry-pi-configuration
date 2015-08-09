@@ -13,7 +13,7 @@ cp /etc/pagekite.d/10_account.rc .
 cp /etc/pagekite.d/20_frontends.rc .
 cp /etc/pagekite.d/30_backends.rc .
 cp /etc/apache2/ports.conf .
-cp /etc/apache2/sites-enabled/000-default .
+cp /etc/apache2/sites-enabled/000-default.conf .
 cp /etc/apache2/sites-enabled/001-default-ssl .
 cp /etc/apache2/mods-enabled/ssl.load .
 cp /etc/apache2/mods-enabled/ssl.conf .
