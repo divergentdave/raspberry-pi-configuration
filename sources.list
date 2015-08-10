@@ -1,5 +1,5 @@
-deb http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi
+deb http://mirrordirector.raspbian.org/raspbian/ jessie main contrib non-free rpi
 # Uncomment line below then 'apt-get update' to enable 'apt-get source'
-#deb-src http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/ wheezy main contrib non-free rpi
-deb-src http://deb.torproject.org/torproject.org wheezy main
+#deb-src http://mirror.ox.ac.uk/sites/archive.raspbian.org/archive/raspbian/ jessie main contrib non-free rpi
+deb-src http://deb.torproject.org/torproject.org jessie main
 deb http://pagekite.net/pk/deb pagekite main
