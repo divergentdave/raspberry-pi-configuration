@@ -1,3 +1,6 @@
+# Hint: You will need to run `sudo systemctl daemon-reload` after adding or
+# changing unit files.
+
 [Unit]
 Description=Anonymizing overlay network for TCP
 After=network.target nss-lookup.target
@@ -12,7 +15,8 @@ ExecStartPre=/usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-t
 ExecStart=/usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-torrc -f /etc/tor/torrc --RunAsDaemon 0
 ExecReload=/bin/kill -HUP ${MAINPID}
 KillSignal=SIGINT
-TimeoutSec=45
+# Made timeout longer so that we get through bootstrapping safely
+TimeoutSec=600
 Restart=on-failure
 LimitNOFILE=65536
 
