@@ -28,3 +28,4 @@ cp /etc/default/hostapd .
 cp /usr/local/bin/flip.pl .
 sudo cat /etc/ddclient.conf | grep -v password > ddclient.conf
 cp /etc/dphys-swapfile .
+cp /etc/systemd/system/tor.service .
