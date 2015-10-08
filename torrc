@@ -130,6 +130,7 @@ Nickname DNCBridgeRPi
 #ContactInfo Random Person <nobody AT example dot com>
 ## You might also include your PGP or GPG fingerprint if you have one:
 #ContactInfo 0xFFFFFFFF Random Person <nobody AT example dot com>
+ContactInfo David Cook <divergentdave@gmail.com>
 
 ## Uncomment this to mirror directory information for others. Please do
 ## if you have enough bandwidth.
@@ -197,3 +198,4 @@ BridgeRelay 1
 AvoidDiskWrites 1
 
 ServerTransportPlugin obfs3,scramblesuit exec /usr/local/bin/obfsproxy managed
+ExtORPort auto
