@@ -16,7 +16,7 @@ ExecStart=/usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-torr
 ExecReload=/bin/kill -HUP ${MAINPID}
 KillSignal=SIGINT
 # Made timeout longer so that we get through bootstrapping safely
-TimeoutSec=600
+TimeoutSec=120
 Restart=on-failure
 LimitNOFILE=65536
 
