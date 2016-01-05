@@ -27,5 +27,5 @@ up iptables -t nat -A PREROUTING -i wlan0 -p tcp --dport 80 -j REDIRECT --to-por
 
 # remap privileged port for pagekite (to apache or tor bridge)
 up iptables -A INPUT -i eth0 -p tcp --dport 443 -j ACCEPT
-up iptables -A INPUT -i eth0 -p tcp --dport 4444 -j ACCEPT
-up iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 4444
+up iptables -A INPUT -i eth0 -p tcp --dport 4445 -j ACCEPT
+up iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 443 -j REDIRECT --to-port 4445
