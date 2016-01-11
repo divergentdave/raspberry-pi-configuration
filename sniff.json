@@ -1,0 +1,28 @@
+{
+    "bind": {
+        "host": "192.168.0.5",
+        "port": 4445
+    },
+    "servers": [
+        {
+            "default": true,
+            "regexp": true,
+            "host": "192.168.0.5",
+            "names": [
+                "^davidsherenowitsa\\.party$",
+                "^www\\.davidsherenowitsa\\.party$",
+                "^[0-9a-f]{32}\\.[0-9a-f]{32}\\.acme\\.invalid$"
+            ],
+            "port": 4443
+        },
+        {
+            "default": false,
+            "regexp": true,
+            "host": "127.0.0.1",
+            "names": [
+                "^www\\.[a-z2-7]{4,25}\\.com$"
+            ],
+            "port": 9090
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=SNIff
+
+[Service]
+ExecStart=/home/pi/go/bin/sniff
+WorkingDirectory=/opt/sniff
+User=sniff
+Group=sniff
+PIDFile=/opt/sniff/sniff.pid
+
+[Install]
+WantedBy=multi-user.target
