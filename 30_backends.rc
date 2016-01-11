@@ -1,5 +1,0 @@
-tls_default=davidsherenowitsa.party
-service_on=https:divergentdave.no-ip.biz:127.0.0.1:4443:
-service_on=https:davidsherenowitsa.party:127.0.0.1:4443:
-service_on=https:www.davidsherenowitsa.party:127.0.0.1:4443:
-service_on=https:unknown:127.0.0.1:9090:dickbutt
