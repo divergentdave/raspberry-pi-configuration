@@ -1,1 +1,1 @@
-deb http://raspberrypi.collabora.com wheezy rpi
+deb tor://raspberrypi.collabora.com wheezy rpi
