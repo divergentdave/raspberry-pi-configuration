@@ -9,6 +9,7 @@ cp /etc/crontab .
 cp /etc/ssh/sshd_config .
 cp /home/pi/.ssh/authorized_keys .
 cp /etc/apt/sources.list .
+cp -r /etc/apt/sources.list.d .
 cp /etc/apache2/ports.conf .
 cp /etc/apache2/sites-enabled/000-default.conf .
 cp /etc/apache2/sites-enabled/001-default-ssl.conf .
