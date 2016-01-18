@@ -109,3 +109,6 @@ export ES_HEAP_SIZE=128m
 
 export GOPATH=$HOME/go
 export PATH=$PATH:/home/pi/gosrc/bin:$GOPATH/bin
+
+# added by travis gem
+[ -f /home/pi/.travis/travis.sh ] && source /home/pi/.travis/travis.sh
