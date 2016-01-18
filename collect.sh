@@ -30,3 +30,4 @@ cp /etc/ssh/moduli .
 cp ~/.vimrc vimrc
 cp /etc/systemd/system/sniff.service .
 cp /opt/sniff/sniff.json .
+cp ~/.bashrc .
