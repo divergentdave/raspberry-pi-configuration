@@ -8,5 +8,6 @@ User=sniff
 Group=sniff
 PIDFile=/opt/sniff/sniff.pid
 
+; Need to run `sudo systemctl enable sniff.service` for this to take effect
 [Install]
 WantedBy=multi-user.target
