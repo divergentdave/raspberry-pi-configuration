@@ -31,3 +31,4 @@ cp ~/.vimrc vimrc
 cp /etc/systemd/system/sniff.service .
 cp /opt/sniff/sniff.json .
 cp ~/.bashrc .
+cp /etc/gitweb.conf .
