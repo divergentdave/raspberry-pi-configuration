@@ -33,3 +33,4 @@ cp /opt/sniff/sniff.json .
 cp ~/.bashrc .
 cp ~/.profile .
 cp /etc/gitweb.conf .
+cp ~/.ssh/config ssh_config
