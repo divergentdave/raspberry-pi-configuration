@@ -1,0 +1,26 @@
+[user]
+	email = divergentdave@gmail.com
+	name = David Cook
+[core]
+	editor = vim
+[color]
+    ui = auto
+
+[alias]
+    isclean = !/home/pi/git-isclean/git-isclean
+
+[diff "asciidiff"]
+    textconv = ~/bin/img-ascii-diff
+
+[diff "spaceman-diff"]
+    command = /usr/local/bin/spaceman-diff
+
+[push]
+    default = simple
+[secrets]
+	providers = git secrets --aws-provider
+	patterns = [A-Z0-9]{20}
+	patterns = (\"|')?(AWS|aws|Aws)?_?(SECRET|secret|Secret)?_?(ACCESS|access|Access)?_?(KEY|key|Key)(\"|')?\\s*(:|=>|=)\\s*(\"|')?[A-Za-z0-9/\\+=]{40}(\"|')?
+	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
+	allowed = AKIAIOSFODNN7EXAMPLE
+	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY

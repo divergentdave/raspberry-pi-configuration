@@ -34,3 +34,4 @@ cp ~/.bashrc .
 cp ~/.profile .
 cp /etc/gitweb.conf .
 cp ~/.ssh/config ssh_config
+cp ~/.gitconfig .
