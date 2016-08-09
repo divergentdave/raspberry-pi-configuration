@@ -13,5 +13,8 @@ autocmd BufRead,BufNewFile,BufEnter /home/pi/oversight.io/* setlocal shiftwidth=
 autocmd BufRead,BufNewFile,BufEnter /home/pi/oversight.garden/* setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufRead,BufNewFile,BufEnter /home/pi/citation/* setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
+" Three spaces for michael/github
+autocmd BufRead,BufNewFile,BufEnter /home/pi/github/* setlocal shiftwidth=3 tabstop=3 softtabstop=3
+
 " Tabs for Go projects
 autocmd BufRead,BufNewFile,BufEnter /home/pi/go/src/* setlocal expandtab! noexpandtab
