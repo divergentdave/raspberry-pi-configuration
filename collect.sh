@@ -13,6 +13,7 @@ cp -r /etc/apt/sources.list.d .
 cp /etc/apache2/ports.conf .
 cp /etc/apache2/sites-enabled/000-default.conf .
 cp /etc/apache2/sites-enabled/001-default-ssl.conf .
+cp /etc/apache2/conf-enabled/security.conf .
 cp /etc/apache2/mods-enabled/ssl.load .
 cp /etc/apache2/mods-enabled/ssl.conf .
 cat /opt/etherpad/local/etherpad/etherpad-lite/settings.json | grep -v "\"sessionKey\"" | grep -v "\"password\"" > etherpad_settings.json
