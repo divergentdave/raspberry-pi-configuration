@@ -1,0 +1,2 @@
+# m h dom mon dow user command
+35	11	*	*	*	root	/home/pi/certbot-auto renew 2>&1 >/home/pi/certbot.log
