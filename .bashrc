@@ -109,3 +109,7 @@ export PATH=$PATH:/home/pi/gosrc/bin:$GOPATH/bin
 
 # added by travis gem
 [ -f /home/pi/.travis/travis.sh ] && source /home/pi/.travis/travis.sh
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME
+source /usr/local/bin/virtualenvwrapper.sh
