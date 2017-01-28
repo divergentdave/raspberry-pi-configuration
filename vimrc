@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 syntax on
 filetype plugin indent on
 
@@ -21,3 +23,5 @@ autocmd BufRead,BufNewFile,BufEnter /home/pi/go/src/* setlocal expandtab! noexpa
 
 " Tabs for pdf-redactor
 autocmd BufRead,BufNewFile,BufEnter /home/pi/pdf-redactor/* setlocal expandtab! noexpandtab shiftwidth=8 tabstop=8 softtabstop=8
+
+autocmd BufNewFile,BufReadPost *.cljc setfiletype clojure
