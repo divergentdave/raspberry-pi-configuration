@@ -102,7 +102,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-export ES_HEAP_SIZE=128m
+export ES_JAVA_OPTS="-Xms128m -Xmx128m"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:/home/pi/gosrc/bin:$GOPATH/bin
